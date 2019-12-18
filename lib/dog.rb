@@ -31,7 +31,7 @@ class Dog
     self
   end
   def self.create(name:, breed:)
-    dog = Dog.new
+    dog = Dog.new("bill", "garrus")
     binding,pry
   end
 end

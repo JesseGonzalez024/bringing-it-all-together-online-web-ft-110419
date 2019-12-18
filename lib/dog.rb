@@ -1,3 +1,4 @@
+require 'pry'
 class Dog 
   attr_accessor :name, :breed, :id
   def initialize(id: nil, name:, breed:)
@@ -25,7 +26,8 @@ class Dog
       INSERT INTO dogs (name, breed)
       VALUES (?, ?)
     SQL
-  answer  = DB[:conn].execute(sql, self.name, self.breed)
+    answer  = DB[:conn].execute(sql, self.name, self.breed)
+    binding.pry
     @id = DB[:conn].execute("SELECT last_insert_rowid() FROM dogs")[0][0]
   end
 end

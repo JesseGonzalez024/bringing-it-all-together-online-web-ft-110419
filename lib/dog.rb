@@ -30,7 +30,7 @@ class Dog
     @id = DB[:conn].execute("SELECT last_insert_rowid() FROM dogs")[0][0]
     self
   end
-  def self.create(row)
+  def self.create(name:, breed:)
     row
     binding.pry
   end

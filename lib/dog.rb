@@ -35,4 +35,8 @@ class Dog
     dog.save
     dog
   end
+  def self.new_from_db(row)
+    row
+    binding.pry
+  end
 end

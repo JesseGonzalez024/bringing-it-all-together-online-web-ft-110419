@@ -40,6 +40,8 @@ class Dog
     dog
   end
   def self.find_by_id(num)
-    
+    sql = <<-SQL
+      
+    SQL
   end
 end

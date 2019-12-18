@@ -32,6 +32,6 @@ class Dog
   end
   def self.create(row)
     row
-    binding,pry
+    binding.pry
   end
 end

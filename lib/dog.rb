@@ -31,7 +31,7 @@ class Dog
     self
   end
   def self.create(name:, breed:)
-    row
+    
     binding.pry
   end
 end
